@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&family=Montserrat:wght@100..900&display=swap');
+@theme {
+        --color-gray-20: #f8f4eb;
+        --color-gray-50: #efe6e6;
+        --color-gray-100: #dfcccc;
+        --color-gray-500: #5e0000;
+        --color-primary-100: #ffe1e0;
+        --color-primary-300: #ffa6a3;   
+        --color-primary-500: #ff6b66;
+        --color-secondary-400: #ffcd58;
+        --color-secondary-500: #ffc132;
+
+        --color-gradient-yellowred: linear-gradient(90deg, #ff616a 0%, #ffc837 100%);
+        --mobile-home: url('/src/assets/HomePageGraphic.png');
+
+        --font-dmsans: 'DM Sans', sans-serif;
+        --font-montserrat: 'Montserrat', sans-serif;
+
+        --evolvetext: 'url(/src/assets/EvolveText.png)';
+        --abstractwaves: 'url(/src/assets/AbstractWaves.png)';
+        --sparkles: 'url(/src/assets/Sparkles.png)';
+        --circles: 'url(/src/assets/Circles.png)';
+
+        --breakpoint-xs: 480px;
+        --breakpoint-sm: 768px;
+        --breakpoint-md: 1060px;
+
+        
+}
+ 
+html,
+body, 
+#root,
+.app {
+        height: 100%;
+        width: 100%;
+        font-family: var(--font-dmsans);
+        @apply text-gray-500;
+
+}
