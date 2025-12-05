@@ -1,4 +1,4 @@
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/Logo.png";
 import Link from "./Link";
 import { SelectedPage } from "../../types/types";
 import useMediaQuery from "../../hooks/useMediaQuey";
