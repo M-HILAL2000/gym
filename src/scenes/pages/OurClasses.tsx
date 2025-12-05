@@ -4,7 +4,7 @@ import type { ClassType } from "../../types/types";
 import { motion } from 'framer-motion';
 import image1 from  "@/assets/image1.png";
 import image2 from  "@/assets/image2.png";
-import image3 from  "@/assets/Image3.png";
+import image3 from "@/assets/Image3.png";
 import image4 from  "@/assets/Image4.png";
 import image5 from  "@/assets/Image5.png";
 import image6 from  "@/assets/Image6.png";
