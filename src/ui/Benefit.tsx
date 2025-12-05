@@ -16,7 +16,7 @@ interface Iprops {
     setSelectedPage?: (value: SelectedPage) => void;
   }
 
-const Benefit = ({ icon, title, description, setSelectedPage}:Iprops) => {
+const BenefitsUi = ({ icon, title, description, setSelectedPage}:Iprops) => {
   return (
     <motion.div 
     variants={childVariant}
@@ -31,8 +31,8 @@ const Benefit = ({ icon, title, description, setSelectedPage}:Iprops) => {
       <p className="my-3 ">{description}</p>
       <AnchorLink 
       className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
-      onClick={() => setSelectedPage && setSelectedPage(SelectedPage.Benefit)}
-      href={`#${SelectedPage.Benefit}`}
+      onClick={() => setSelectedPage && setSelectedPage(SelectedPage.Benefits)}
+      href={`#${SelectedPage.Benefits}`}
       >
         <p>Learn More</p>
       </AnchorLink>
@@ -40,4 +40,4 @@ const Benefit = ({ icon, title, description, setSelectedPage}:Iprops) => {
   )
 }
 
-export default Benefit;
+export default BenefitsUi;

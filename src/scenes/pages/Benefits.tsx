@@ -1,10 +1,11 @@
-import { SelectedPage, type BenefitType } from "../../types/types";
+import { SelectedPage} from "../../types/types";
 import { motion } from "framer-motion";
 import HText from "../../ui/HText";
 import { GraduationCap, House, Users } from "lucide-react";
 import ActionButton from "../../ui/ActionButton";
 import BenefitsPageGraphic from "../../assets/BenefitsPageGraphic.jpeg";
-import Benefit from "../../ui/Benefit";
+import type { BenefitType } from "../../types/types";
+import BenefitsUi from "../../ui/Benefit";
 
 
 const benefits: Array<BenefitType> = [
@@ -36,7 +37,7 @@ const container = {
 interface Iprops {
   setSelectedPage: (value: SelectedPage) => void;
 }
-const BenefitPage = ({ setSelectedPage }: Iprops) => {
+const Benefits = ({ setSelectedPage }: Iprops) => {
   return (
     <section id="benefits" className="mx-auto min-h-full w-5/6 pt-30">
       <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}>
@@ -67,7 +68,7 @@ const BenefitPage = ({ setSelectedPage }: Iprops) => {
           variants={container}
         >
           {benefits.map((benefit: BenefitType) => (
-            <Benefit
+            <BenefitsUi
               key={benefit.title}
               icon={benefit.icon}
               title={benefit.title}
@@ -140,4 +141,4 @@ const BenefitPage = ({ setSelectedPage }: Iprops) => {
   );
 };
 
-export default BenefitPage;
+export default Benefits;
