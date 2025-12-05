@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import HText from "../../ui/HText";
 import { GraduationCap, House, Users } from "lucide-react";
 import ActionButton from "../../ui/ActionButton";
-import BenefitsPageGraphic from "../../assets/BenefitsPageGraphic.jpeg";
+import BenefitsPageGraphic from "@/assets/BenefitsPageGraphic.png";
 import type { BenefitType } from "../../types/types";
 import BenefitsUi from "../../ui/Benefit";
 

@@ -2,7 +2,7 @@ import { SelectedPage } from "../../types/types";
 import { motion } from "framer-motion";
 import HText from "../../ui/HText";
 import { useForm } from "react-hook-form";
-import ContactUsPageGraphic from "../../assets/ContactUsPageGraphic.jpeg";
+import ContactUsPageGraphic from "@/assets/ContactUsPageGraphic.png";
 
 interface Iprops {
   setSelectedPage: (value: SelectedPage) => void;
